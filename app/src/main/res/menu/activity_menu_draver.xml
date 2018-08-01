@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/google_icon"
+            android:title="Google"
+            android:icon="@drawable/ic_google"
+            android:visible="true"/>
+        <item
+            android:id="@+id/youtube_icon"
+            android:title="Youtube"
+            android:icon="@drawable/ic_youtube"
+            android:visible="true"/>
+        <item
+            android:id="@+id/gmail_icon"
+            android:title="Gmail"
+            android:icon="@drawable/ic_gmail"
+            android:visible="true"/>
+    </group>
+</menu>

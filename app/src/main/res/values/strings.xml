@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Custom Web View</string>
+
+    <string-array name="name">
+        <item>Google</item>
+        <item>Youtube</item>
+        <item>Gmail</item>
+    </string-array>
+    <integer-array name="icon">
+        <item>@drawable/ic_google</item>
+        <item>@drawable/ic_youtube</item>
+        <item>@drawable/ic_gmail</item>
+    </integer-array>
+</resources>
