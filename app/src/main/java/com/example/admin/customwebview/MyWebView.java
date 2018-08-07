@@ -17,11 +17,6 @@ public class MyWebView extends WebView{
         initView(context);
     }
 
-    /*public MyWebView(Context context, AttributeSet attrs, int value) {
-        super(context, attrs, value);
-        initView(context);
-    }*/
-
     @SuppressLint("SetJavaScriptEnabled")
     public void initView(Context context) {
         LayoutInflater layoutInflater = (LayoutInflater) context.

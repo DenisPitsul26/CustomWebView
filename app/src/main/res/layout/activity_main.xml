@@ -1,66 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.mxn.soul.flowingdrawer_core.FlowingDrawer xmlns:app="http://schemas.android.com/apk/res-auto"
+<android.support.design.widget.CoordinatorLayout xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content1"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/drawerlayout"
-    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:clipChildren="false"
-    android:clipToPadding="false"
-    app:edPosition="1"
-    app:edMenuSize="260dp"
-    app:edMenuBackground="#c0c0c0">
-
-    <RelativeLayout
+    android:layout_height="match_parent">
+    <com.mxn.soul.flowingdrawer_core.FlowingDrawer
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/drawerlayout"
+        android:layout_height="match_parent"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        app:edPosition="1"
+        app:edMenuSize="258dp"
+        app:edMenuBackground="#c0c0c0">
 
-        <com.example.admin.customwebview.MyWebView
-            android:id="@+id/web_view"
-            android:layout_below="@+id/start_URL"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="35dp"
-            tools:ignore="UnknownId" />
-
-        <ImageView
-            android:layout_width="35dp"
-            android:layout_height="35dp"
-            android:src="@mipmap/ic_menu"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentLeft="true"
-            android:id="@+id/info"
-            android:contentDescription="TODO" />
-
-    </RelativeLayout>
-
-    <com.mxn.soul.flowingdrawer_core.FlowingMenuLayout
-        android:id="@+id/menulayout"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/id_container_menu">
-            <LinearLayout
+            android:layout_height="match_parent">
+
+            <com.example.admin.customwebview.MyWebView
+                android:id="@+id/web_view"
+                android:layout_below="@+id/info"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical">
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="175dp"
-                    android:src="@mipmap/ic_web"/>
+                tools:ignore="UnknownId" />
 
-                <ListView
-                    android:layout_width="match_parent"
-                    android:layout_height="70pt"
-                    android:id="@+id/web_page"
-                    android:layout_marginTop="8pt"/>
-
-            </LinearLayout>
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@mipmap/ic_menu"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/info"
+                tools:ignore="ContentDescription" />
 
         </RelativeLayout>
 
-    </com.mxn.soul.flowingdrawer_core.FlowingMenuLayout>
+        <com.mxn.soul.flowingdrawer_core.FlowingMenuLayout
+            android:id="@+id/menulayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/id_container_menu"
+                android:background="@color/colorPrimaryDark">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    tools:ignore="UselessParent">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="145dp"
+                        android:src="@mipmap/ic_web3"
+                        tools:ignore="ContentDescription" />
 
-</com.mxn.soul.flowingdrawer_core.FlowingDrawer>
+                    <ListView
+                        android:layout_width="match_parent"
+                        android:layout_height="90pt"
+                        android:id="@+id/web_page"
+                        android:layout_marginTop="8pt"/>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </com.mxn.soul.flowingdrawer_core.FlowingMenuLayout>
+
+    </com.mxn.soul.flowingdrawer_core.FlowingDrawer>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/send_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@android:drawable/ic_dialog_email" />
+
+</android.support.design.widget.CoordinatorLayout>
